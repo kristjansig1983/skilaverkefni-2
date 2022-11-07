@@ -60,6 +60,7 @@ const calcSum = (a, b) => {
   // Done
   const getFirstChar = (a, n) => {
     return a.slice(0,1);
+    console.log(bleh);
   };
   
   /*
