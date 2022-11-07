@@ -1,8 +1,44 @@
+// Write a function that takes an array (a) and a value (n) as argument
+// Return the nth element of 'a'
+// Done!
+const getNthCharacterInArray = (a, n) => {
+  return a[n -1];
+};
+
+/*
+Test cases:
+myFunction([1,2,3,4,5],3) Expected 3
+myFunction([10,9,8,7,6],5) Expected 6
+myFunction([7,2,1,6,3],1) Expected 7
+*/
+
+// ========================================
+
+// Write a function that takes an array (a) as argument
+// Remove the first 3 elements of 'a'
+// Return the result
+// Tip: use the array prototype function slice()
+// Done!
+const removeFirstThreeElements = (a) => {
+  return a.slice(3);
+};
+
+/*
+Test cases:
+myFunction([1,2,3,4]) Expected [4]
+myFunction([5,4,3,2,1,0]) Expected [2,1,0]
+myFunction([99,1,1]) Expected []
+*/
+
+// ========================================
+
+// Write a function that takes an array (a) and a number (n) as arguments
 // It should return the last n elements of a
 // Tip: use the array prototype function slice()
+// Done!
 const removeLastNElements = (a, n) => {
-    return;
-  };
+  return a.slice(-n);
+};
   
   /*
   Test cases:
@@ -15,8 +51,9 @@ const removeLastNElements = (a, n) => {
   // Write a function that takes an array (a) as argument
   // Return the number of elements in a
   // Tip: How do you find the length of an array?
+  // Done!
   const countNumberOfElements = (a) => {
-    return;
+    return a.length;
   };
   /*
   Test cases: 
@@ -32,8 +69,9 @@ const removeLastNElements = (a, n) => {
   // Tip: There are multiple ways to solve this e.g.
   // - Use .filter() to filter only negative numbers, and count them
   // - Use .forEach() to iterate through all numbers and count negatives
+  // Done!
   const countNumberOfNegativeValues = (a) => {
-    return;
+    return a.filter((value) => value < 0).length;
   };
   
   /*
@@ -48,8 +86,9 @@ const removeLastNElements = (a, n) => {
   // Write a function that takes an array of numbers as argument
   // It should return the sum of the numbers
   // Tip: forEach, c-style loop (or even .reduce() for the brave)
+  // Done!
   const calcSumOfArrayOfNumbers = (a) => {
-    return;
+    return a.reduce((a,b) => a+b, 0);
   };
   
   /*
@@ -64,8 +103,9 @@ const removeLastNElements = (a, n) => {
   // It should return the average of the numbers
   // Tip: forEach, c-style loop (or even .reduce() for the brave)
   // to get the sum, then divide by number of elements in array
+  // Done!
   const calcAvgOfArrayOfNumbers = (arr) => {
-    return;
+    return arr.reduce((a ,b) => a + b, 0) /arr.length;
   };
   
   /*
@@ -80,8 +120,9 @@ const removeLastNElements = (a, n) => {
   // Return the longest string
   // Tip: It's possible to get length of string with .length
   // E.g. 'Gunnsteinn'.length = 10
+  // Done!
   const getLongestStringFromArray = (arr) => {
-    return;
+    return arr.reduce((a,b) => a.length > b.length ? a:b );
   };
   
   /*
@@ -95,8 +136,9 @@ const removeLastNElements = (a, n) => {
   // It should return true if all elements in the array are equal
   // It should return false otherwise
   // Tip: STRICTLY equal, ====
+  // Done!
   const areAllEqual = (arr) => {
-    return;
+    return new Set(arr).size === 1;
   };
   
   /*
@@ -111,7 +153,7 @@ const removeLastNElements = (a, n) => {
   // It should return an array containing the values of all arrays
   // Tip: Make use of the spread syntax (...), as the parameters suggest
   const mergeAllArrays = (...arrays) => {
-    return;
+    return arrays.concat(...arrays);
   };
   
   /*

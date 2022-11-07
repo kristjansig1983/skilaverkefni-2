@@ -2,7 +2,7 @@
 //  Sum a and b
 // Return the result
 
-// Done
+// Done!
 const calcSum = (a, b) => {
     return a + b;
   };
@@ -20,7 +20,7 @@ const calcSum = (a, b) => {
   
   // Write a function that takes two values, say a and b, as arguments
   // Return true if the two values are equal and of the same type
-  // Done
+  // Done!
   const strictEquality = (a, b) => {
     return a === b;
   };
@@ -37,7 +37,7 @@ const calcSum = (a, b) => {
   
   // Write a function that takes a value as argument
   // Return the type of the value
-  //Done
+  // Done!
   const getTypeOfValue = (a) => {
     return typeof a;
   };
@@ -57,10 +57,9 @@ const calcSum = (a, b) => {
   // Write a function that takes a string (a) as argument
   // Return the 1st character of the strgin a
   // Tip: look up the string prototype function slice() or split()
-  // Done
+  // Done!
   const getFirstChar = (a, n) => {
     return a.slice(0,1);
-    console.log(bleh);
   };
   
   /*
@@ -75,8 +74,9 @@ const calcSum = (a, b) => {
   // Write a function that takes a string (a) and a number (n) as argument
   // Return the nth character of 'a'
   // Tip: look up the string prototype function slice() or split()
+  // Done!
   const getNthChar = (a, n) => {
-    return n.slice();
+    return a[n - 1];
   };
   
   /*
@@ -92,8 +92,9 @@ const calcSum = (a, b) => {
   // Extract the first half a
   // Return the result
   // Tip: look up the string prototype function slice() or split()
+  // Done!
   const extractFirstHalfOfString = (a) => {
-    return;
+    return a.slice(0, a.length / 2);
   };
   
   /*
@@ -108,8 +109,9 @@ const calcSum = (a, b) => {
   // Write a function that takes a string (a) as argument
   // Remove the last 3 characters of a
   // Return the result
+  // Done!
   const removeLastNChractersOfString = (a) => {
-    return;
+    return a.slice(0, -3);
   };
   
   /*
@@ -125,8 +127,9 @@ const calcSum = (a, b) => {
   // If the number is even, return true
   // Otherwise, return false
   // Tip: How does the % operator work?
+  // Done!
   const checkIfNumberIsEven = (a) => {
-    return;
+    return a % 2 === 0;
   };
   
   /*
@@ -141,8 +144,9 @@ const calcSum = (a, b) => {
   
   // Write a function that takes two numbers (a and b) as argument
   // Return b percent of a
+  // Done!
   const getPercentageOfNumber = (a, b) => {
-    return;
+    return (a/100)*b;
   };
   
   /*
@@ -163,8 +167,9 @@ const calcSum = (a, b) => {
   // - Mind the order
   // - Power operator is either Math.pow or **
   //   - e.g. 2**2 = 4
+  // Done!
   const useAllTheOperators = (a, b, c, d, e, f) => {
-    return;
+    return (((a + b -c) * d) / e) ** f;
   };
   
   /*
