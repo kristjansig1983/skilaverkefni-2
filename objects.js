@@ -3,7 +3,7 @@
 // In other words, it should not be null or undefined or false
 // Return false otherwise
 const checkIfPropertyExistsAndTruthy = (a, b) => {
-    return;
+    return  checkIfPropertyExistsAndTruthy.hasOwnProperty(a,'b');
   };
   /*
   Test cases:
@@ -16,8 +16,9 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   
   // Write a function that takes an object with two properties as argument
   // It should return the value of the property with key country
+  // Done!
   const getCountry = (obj) => {
-    return;
+    return obj.country;
   };
   
   /*
@@ -32,7 +33,7 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   // It should return the value of the property with key 'prop-2'
   // Tip: you might want to use the square brackets to access the property
   const getWeirdKeyValue = (obj) => {
-    return;
+    return obj['prop-2'];
   };
   
   /*
