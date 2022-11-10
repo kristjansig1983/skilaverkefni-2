@@ -2,8 +2,9 @@
 // Return true if the object has a property with key 'b', but only if it has a truthy value
 // In other words, it should not be null or undefined or false
 // Return false otherwise
+//Done!
 const checkIfPropertyExistsAndTruthy = (a, b) => {
-    return  checkIfPropertyExistsAndTruthy.hasOwnProperty(a,'b');
+    return  !!a[b];
   };
   /*
   Test cases:
@@ -32,6 +33,7 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   // Write a function that takes an object with two properties as argument
   // It should return the value of the property with key 'prop-2'
   // Tip: you might want to use the square brackets to access the property
+  // Done!
   const getWeirdKeyValue = (obj) => {
     return obj['prop-2'];
   };
@@ -46,8 +48,9 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   
   // Write a function that takes an object with two properties and a string as arguments
   // It should return the value of the property with key equal to the value of the string
+  //Done!
   const getPropertyByString = (obj, key) => {
-    return;
+    return obj[key];
   };
   
   /*
@@ -62,8 +65,9 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   // Return true if the object has a property with key 'b'
   // Return false otherwise
   // NOTE: Test case 3 is a bit tricky because the value of property 'z' is undefined, but the property itself exists
+  //Done!
   const checkIfPropertyExists = (a, b) => {
-    return;
+    return b in a;
   };
   
   /*
@@ -78,8 +82,9 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   // Write a function that takes a string as argument
   // Create an object that has a property with key 'key' and a value equal to the string
   // Return the object
+  //Done!
   const createObjectWithKeyValue = (a) => {
-    return;
+    return { key: a};
   };
   
   /*
@@ -94,8 +99,9 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   // Write a function that takes two strings (a and b) as arguments
   // Create an object that has a property with key 'a' and a value of 'b'
   // Return the object
+  //Done!
   const createObjectWithKeyAndValue = (a, b) => {
-    return;
+    return { [a]: b};
   };
   
   /*
@@ -110,8 +116,9 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   // Write a function that takes two arrays (a and b) as arguments
   // Create an object that has properties with keys 'a' and corresponding values 'b'
   // Return the object
+  //Done!
   const createObjectFromArrays = (a, b) => {
-    return;
+    return Object.fromEntries(a.map((v,index) => [v, b[index]]));
   };
   
   /*
@@ -125,8 +132,9 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   // Write a function that takes an object (a) as argument
   // Return an array with all object keys
   // Tip: Object.keys()
+  // Donw!
   const extractKeysFromObject = (a) => {
-    return;
+    return Object.keys(a);
   };
   
   /*
@@ -157,8 +165,9 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   // Write a function that takes an object (a) as argument
   // Return the sum of all object values
   // Tip: Object.values()
+  // Done!
   const calcSumOfAllObjectValues = (a) => {
-    return;
+    return Object.values(a).reduce((total, cv) => total + cv, 0);
   };
   /*
   Test cases:
@@ -173,7 +182,7 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   // except for the property with key 'b'
   // Tip: Spread syntax
   const removePropertyB = (obj) => {
-    return;
+    return ;
   };
   
   /*
@@ -193,6 +202,8 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   // It should have the properties 'a', 'b', 'c', 'd', and 'e'
   // Tip: Spread syntax
   const mergeAndFixObjects = (x, y) => {
+    const { b, ...rest} = y;
+    return { ...x, ...rest, b: d};
     return;
   };
   /*
