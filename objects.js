@@ -132,7 +132,7 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   // Write a function that takes an object (a) as argument
   // Return an array with all object keys
   // Tip: Object.keys()
-  // Donw!
+  // Done!
   const extractKeysFromObject = (a) => {
     return Object.keys(a);
   };
@@ -150,7 +150,7 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   // Return the property 'b' of object 'a' inside the original object if it exists
   // If not, return undefined
   const getNestedProperty = (obj) => {
-    return;
+    return obj?.a?.b;
   };
   
   /*
@@ -181,8 +181,10 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   // It should return an object with all original object properties
   // except for the property with key 'b'
   // Tip: Spread syntax
+  // Done!
   const removePropertyB = (obj) => {
-    return ;
+    const { b, ...newObj } = obj;
+    return newObj;
   };
   
   /*
@@ -201,9 +203,10 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   // Return the resulting object
   // It should have the properties 'a', 'b', 'c', 'd', and 'e'
   // Tip: Spread syntax
+  // Done!
   const mergeAndFixObjects = (x, y) => {
     const { b, ...rest} = y;
-    return { ...x, ...rest, b: d};
+    return { ...x, ...rest, d: b};
     return;
   };
   /*
@@ -217,8 +220,9 @@ const checkIfPropertyExistsAndTruthy = (a, b) => {
   // Write a function that takes an object (a) and a number (b) as arguments
   // Multiply all values of 'a' by 'b'
   // Return the resulting object
+  // Done!
   const multipyAllValuesByB = (a, b) => {
-    return;
+    return Object.entries(a).reduce((pv,cv) => ({...pv, [cv[0]]: cv[1] * b}), {}) ;
   };
   
   /*
